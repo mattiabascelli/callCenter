@@ -1,0 +1,140 @@
+﻿body
+{
+  background-color:#39A2AE;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f7f7f7;
+}
+.schermo {
+    background-color: #71C4C2;
+    max-width: 920px;
+    margin: 50px auto;
+    padding: 10px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.tabella {
+    max-width: 900px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5px 5px 5px 5px;
+    border-color: #39A2AE;
+    border-radius: 10px;
+} 
+.tabella h2{
+    text-align:center;
+}
+
+.tabella table{
+    width:100%;
+    max-width: 900px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+    .tabella td, tr {
+        text-align: center;
+        background-color:#fff;
+        color: #b59690;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+.notifica {
+    background-color: #b59690;
+    max-width: 850px;
+    margin-top: 10Px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    color: #f7f7f7;
+}
+.notifica p{
+    font-size: 12px;
+}
+.notifica img{
+    max-width: 250px;
+    width: 100%;
+}
+
+.notifica button {
+    max-width: 350px;
+        width: 100%;
+        background-color: crimson;
+        color: white;
+        padding: 10px auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+.notifica button:hover {
+    background-color:red;
+    color: white;
+
+}
+.dati{
+
+}
+/*avviso lampeggiante*/
+.blink {
+    animation: 1s blinker linear infinite;
+    font-size: 24px;
+    color:brown;
+}
+.formApp {
+    background-color: #E8D8D2;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 920px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+}
+    .formApp table {
+        width: 100%;
+        max-width: 900px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    .formApp th {
+        text-align: left;
+    }
+    .formApp input{
+        width:97%;
+    }
+    .formApp button {
+        max-width: 400px;
+        width: 100%;
+        background-color: #B59690;
+        color: white;
+        margin-bottom: 5px;
+        font-size:16px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .formApp button:hover {
+        background-color: #E8D8D2;
+        color: #B59690;
+    }
+/*Keyframe*/
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}

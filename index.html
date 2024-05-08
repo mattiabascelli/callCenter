@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Gestionale Call Center</title>
+</head>
+<body>
+    <div class="schermo">
+        <div class="notifica">
+            <h2 id="avviso"></h2>
+            <h2 id="avviso2"</h2>
+        </div>
+        <!--Tabella 1-->
+        <div class="tabella">
+            <h2>Telefonate</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Nome Utente</th>
+                        <th>Numero Telefono</th>
+                        <th>Nominativo Operatore</th>
+                    </tr>
+                </thead>
+                <tbody id="tabella">
+                </tbody>
+            </table>
+
+            <br><br>
+            <h2>Appuntamenti </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data e Ora</th>
+                        <th>Nominativo Operatore</th>
+                        <th>Motivo</th>
+
+
+
+                    </tr>
+                </thead>
+
+                <tbody id="tabella2">
+                </tbody>
+
+            </table>
+        </div>
+        <hr />
+        <div class="formApp">
+            <table>
+                <tr>
+                    <th>Data dell'Appuntamento:</th>
+                    <th><input type="date" id="data" required /></th>
+                </tr>
+                <tr>
+                    <th>Ora dell'Appuntamento:</th>
+                    <th><input type="time" id="ora" required /></th>
+                </tr>
+                <tr>
+                    <th>Motivo Appuntamento:</th>
+                    <th><input type="text" id="motivo" required /></th>
+                </tr>
+                <tr>
+                    <th>Nominativo Operatore:</th>
+                    <th> <input type="text" id="nominativo" required /></th>
+                </tr>
+            </table><br />
+            <button type="button" onclick="prenotaAppuntamento()">Prenota Appuntamento</button>
+            <button type="button" onclick="eliminaAppuntamento()">Elimina Appuntamento Meno Recente</button>
+
+            <hr />
+
+            <table>
+                <tr>
+                    <th>Numero di Telefono:</th>
+                    <th><input type="number" id="numero" required /></th>
+                </tr>
+                <tr>
+                    <th>Nome dell' utente:</th>
+                    <th><input type="text" id="nome" required /></th>
+                </tr>
+                <tr>
+                    <th>Nominativo Operatore:</th>
+                    <th><input type="text" id="nomeO" required /></th>
+                </tr>
+                <tr>
+                    <th>Data della chiamata:</th>
+                    <th> <input type="date" id="data2" required /></th>
+                </tr>
+                <tr>
+                    <th>Ora della chiamata:</th>
+                    <th> <input type="time" id="ora2" required /></th>
+                </tr>
+            </table><br />
+            <button type="button" onclick="aggiungiChiamata()">Aggiungi chiamata</button>
+            <button type="button"onclick="eliminaChiamata()">Elimina chiamata Meno Recente</button>
+
+        </div>
+
+        <hr />
+        <div class="dati">
+            TEAM3 &copy; 2024 - GESTIONALE CALL CENTER
+        </div>
+    </div>
+       
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
